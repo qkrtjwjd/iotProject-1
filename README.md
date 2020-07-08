@@ -16,16 +16,20 @@ python AdafruitDHT.py 11 4
  
 
 
+##
 '''
 curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 
+##
 '''
 echo "deb https://repos.influxdata.com/debian stretch stable" | sudo tee /etc/apt/sources.list.d/influxdb.list 
 
+##
 '''
 sudo apt update
 sudo apt install influxdb
 
+##
 '''
 sudo service influxdb start
 
@@ -45,6 +49,7 @@ create database <데이터베이스 이름>
 # Grafana Installation
 
 ## 1. Repository의 GPG key를 더하기
+...
 
 curl https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
 ...
@@ -62,3 +67,4 @@ sudo apt update
 sudo apt install grafana
 ...
 
+# 4. 프로그램 실행

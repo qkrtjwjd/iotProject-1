@@ -1,4 +1,4 @@
-## Install DHT11 sensor
+# Install DHT11 sensor
 '''
 git clone https://github.com/adafruit/Adafruit_Python_DHT.git
 '''
@@ -12,7 +12,7 @@ run
 '''
 python AdafruitDHT.py 11 4
 '''
-### JAVA Install
+# JAVA Install
  
 
 
@@ -35,7 +35,7 @@ sudo service influxdb start
 
 ...
 
-## 5. 데이터베이스 만들기
+# 데이터베이스 만들기
 ...
 create database <데이터베이스 이름>
 

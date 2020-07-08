@@ -57,23 +57,21 @@ echo "deb https://dl.bintray.com/fg2it/deb stretch main" | sudo tee -a/atc/apt/s
 
 
 ## 3. 프로그램 설치
-
-
+```
 sudo apt update
 sudo apt install grafana
-...
+
 
 ## 4. 프로그램 실행
-
 ```
 sudo service grafana-server start
 ```
 
-## influxdb import with python
 ```
+influxdb import with python
 
-sudo pip install influxdb
 ```
+sudo pip install influxdb
 
 ## gpio pin map
 ```

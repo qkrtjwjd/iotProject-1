@@ -58,16 +58,28 @@ sudo apt install grafana
 
 
 ## 4. 프로그램 실행
-```
 
 sudo service grafana-server start
-```
+
 ## influxdb import with python
 
 sudo pip install influxdb
 
 ## gpio pin map
-```
 
 cd /tep
+wget https://project-downloads.drogon.net/wiringpi-latest.deb
+sudo dpkg -i wiringpi-latest.deb
+```
+
+
+pwd
+/home/pi
+
+pwd
+/home/pi
+
+cd /home/pi/
+cd ~
+git clone https://github.com/sonnonet/jjvision
 

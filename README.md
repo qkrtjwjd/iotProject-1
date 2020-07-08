@@ -1,5 +1,7 @@
 # Install DHT11 sensor
-```
+
+## 1.
+
 git clone https://github.com/adafruit/Adafruit_Python_DHT.git
 cd Adafruit_Python_DHT
 sudo python setup.py install
@@ -8,7 +10,6 @@ cd Adafruit_Python_DHT/examples
 
 python AdafruitDHT.py 11 4
 
-```
 # JAVA Install
  
 
@@ -62,4 +63,20 @@ sudo apt update
 sudo apt install grafana
 ...
 
-# 4. 프로그램 실행
+## 4. 프로그램 실행
+
+```
+sudo service grafana-server start
+```
+
+## influxdb import with python
+```
+
+sudo pip install influxdb
+```
+
+## gpio pin map
+```
+
+cd /tep
+

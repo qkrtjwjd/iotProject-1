@@ -31,10 +31,10 @@ sudo apt install influxdb
 ```
 sudo service influxdb start
 
-...
+
 
 # 데이터베이스 만들기
-...
+```
 create database <데이터베이스 이름>
 
 ...

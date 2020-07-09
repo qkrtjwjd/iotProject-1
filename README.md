@@ -12,19 +12,20 @@ python AdafruitDHT.py 11 4
  
 
 
-##
-```
+# 1.
+
 curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 
-```
+#2. 
+
 echo "deb https://repos.influxdata.com/debian stretch stable" | sudo tee /etc/apt/sources.list.d/influxdb.list 
 
-##
-```
+#3.
+
 sudo apt update
 sudo apt install influxdb
 
-```
+#4.
 sudo service influxdb start
 
 
@@ -48,7 +49,6 @@ curl https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo a
 ## 2. Repository를 더하기
 
 echo "deb https://dl.bintray.com/fg2it/deb stretch main" | sudo tee -a/atc/apt/sources.list.d/grafana.list
-
 
 ## 3. 프로그램 설치
 

@@ -147,4 +147,22 @@ def intterrupt_fired(channel):
  
  pip 
 
+cd 
+Is
+Is
+cd ..
+rm 
+cd jjvision/
+
+Is
+
+README.md 
+
+git add .
+git commit -m pirsoftware
+
+git push
+
+
+
 

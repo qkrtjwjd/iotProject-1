@@ -82,4 +82,11 @@ pwd
 cd /home/pi/
 cd ~
 git clone https://github.com/sonnonet/jjvision
+```
 
+### Git hub Use
+
+ - Repository down load
+ ```
+ git clone https://github.com/doyeon0507/iotProject
+ ```

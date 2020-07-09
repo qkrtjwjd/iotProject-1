@@ -90,3 +90,10 @@ git clone https://github.com/sonnonet/jjvision
  ```
  git clone https://github.com/doyeon0507/iotProject
  ```
+ 
+ set nu
+ set cindent
+ set ts=4
+ if has("syntax")
+  systax on
+  endif

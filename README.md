@@ -10,7 +10,7 @@ python AdafruitDHT.py 11 4
 
 # JAVA Install
  
-```
+
 # 1.
 
 curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
@@ -31,39 +31,39 @@ sudo service influxdb start
 
 
 # 데이터베이스 만들기
-```
+
 create database <데이터베이스 이름>
 
 
 
 확인 : show databases
 
-```
+
 
 # Grafana Installation
 
-```
+
 ## 1. Repository의 GPG key를 더하기
-```
+
 
 curl https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
 
 
 ## 2. Repository를 더하기
-```
+
 
 echo "deb https://dl.bintray.com/fg2it/deb stretch main" | sudo tee -a/atc/apt/sources.list.d/grafana.list
 
 
 ## 3. 프로그램 설치
-```
+
 
 sudo apt update
 sudo apt install grafana
 
 
 ## 4. 프로그램 실행
-```
+
 
 sudo service grafana-server start
 

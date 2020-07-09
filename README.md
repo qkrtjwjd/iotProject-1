@@ -91,9 +91,12 @@ git clone https://github.com/sonnonet/jjvision
  git clone https://github.com/doyeon0507/iotProject
  ```
  
- set nu
- set cindent
- set ts=4
- if has("syntax")
+ ## vim 편집기 사용법
+ ```
+ set nu       // Line numner
+ set cindent  // C language indent
+ set ts=4     // tab size 4
+ if has("syntax") // sysntax on
   systax on
   endif
+```

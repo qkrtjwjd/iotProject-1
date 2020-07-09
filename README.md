@@ -96,7 +96,47 @@ git clone https://github.com/sonnonet/jjvision
  set nu       // Line numner
  set cindent  // C language indent
  set ts=4     // tab size 4
+ set softtabtop=4
+ set bg=dark
+ set expandtab
+ let python_version_2 = 1
+ let python_highlight_all = 1
+ filetype indent plugin on
+ 
  if has("syntax") // sysntax on
   systax on
   endif
+  
 ```
+#!/user/bin/python
+
+import time
+improt RPI.GPIO as GPIO 
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(4, GPIO_IN)
+
+def intterrupt_fired(channel):
+ print("interrupt Fired")
+ print(channel)
+ 
+ GPIO.add_event_detect(4, GPIO.FALLING, callback=interrupt_firde)
+ 
+ while(True);
+  time.sleep(1)
+  print("timer fired")
+ 
+ is
+ 
+ cd sttudy
+ ls
+ 
+ vim.pir.py
+ python pir.py
+ 
+ pip install
+ 
+ 
+ pip 
+
+

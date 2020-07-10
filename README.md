@@ -84,7 +84,7 @@ pwd
 
 pwd
 /home/pi
-
+git
 cd /home/pi/
 cd ~
 git clone https://github.com/sonnonet/jjvision
@@ -189,3 +189,26 @@ cd ..
 pwd
 /home/pi
 
+# bluetooth disable
+sudo systenctk disable hcuiart
+
+
+
+#!/usr/bin/python
+import sys, serial, time
+
+comm = 'dev/ttyAMA0'
+bauadrate = 38400
+
+device = serial.Serial(comm, baudrate, timeout = 5)
+print(device)
+
+while True :
+ try:
+  rcvBuf = bytearray()
+  device.reset_input_bufer()
+  rcvBuf = device.read_until(size=12)
+  print rcvBuf
+  except Exception as e:
+   print("Exception read") + str(e)
+   time.sleep(5)

@@ -165,4 +165,8 @@ git push
 
 
 
+sudo apt raspi-config
+SNC Viewer
+sncserver
+
 

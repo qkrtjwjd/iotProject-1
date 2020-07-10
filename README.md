@@ -209,12 +209,12 @@ while True :
   rcvBuf = bytearray()
   device.reset_input_bufer()
   rcvBuf = device.read_until(size=12)
+
   print rcvBuf
   temp = rcvBuf.find('p')
-  a = revBuf[2:temp]
+  a = rcvBuf[2:temp]
   b = int(a)
   print b
   except Exception as e:
    print("Exception read") + str(e)
    time.sleep(5)
-

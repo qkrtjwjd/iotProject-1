@@ -11,7 +11,7 @@ python AdafruitDHT.py 11 4
 # JAVA Install
  
 
-# 1.
+#1.
 
 curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 

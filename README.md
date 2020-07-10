@@ -164,9 +164,28 @@ git commit -m pirsoftware
 git push
 
 
-
+## 
 sudo apt raspi-config
 SNC Viewer
 sncserver
 
+cd /
+ls
+cd ~
+cd - 
+cd /home/pi
+
+
+cp pir.py Documents/
+cp pir.py Documents/pir.py
+cd Documents/
+ls
+>>pir.py
+
+pwd
+/home/pi/Documents
+
+cd ..
+pwd
+/home/pi
 

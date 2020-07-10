@@ -500,13 +500,13 @@ import logging
  22 
  23 from telegram.ext import Updater, CommandHandler
  24 
- # import sys, serial, time
+ ## import sys, serial, time
 
- # device = serial.Serial('/dev/ttyAMA0', 38400, timeout = 5)
+ ## device = serial.Serial('/dev/ttyAMA0', 38400, timeout = 5)
  33 # Define a few command handlers. These usually take the two arguments update and
  34 # context. Error handlers also receive the raised TelegramError object in error.
  35 def co2(update, context):
- # try:
+ ## try:
  37  ```             rcBuf = bytearray()
  38                 device.reset_input_buffer()
  39                 rcvBuf = device.read_until(size=12)
@@ -535,7 +535,7 @@ import logging
 108                                   pass_chat_data=True))
 109     dp.add_handler(CommandHandler("unset", unset, pass_chat_data=True))
 
-# dp.add_handler(CommandHandler("co2",co2))
+## dp.add_handler(CommandHandler("co2",co2))
 
 111 
 112     # Start the Bot

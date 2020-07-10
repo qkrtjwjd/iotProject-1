@@ -195,6 +195,7 @@ sudo systenctk disable hcuiart
 
 
 # !/usr/bin/python
+```
 import sys, serial, time
 
 comm = 'dev/ttyAMA0'

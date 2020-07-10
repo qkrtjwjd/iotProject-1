@@ -221,20 +221,27 @@ while True :
 
 
 ```
-#grafana
+# grafana
+```
 sudo service grafana-server start
 
-#telegram install
+```
+# telegram install
+```
 pip3 install python-telegram-bot --upgrade
+```
 
 git clone https://github.com/python-telegram-bot/python-telegram-bot --recursive
+
 ls
 cd python-telegram-bot/examples/
+
 ls
 vim timerbot.py
->> 85 : 1346081175:AAHryYn6BrTHQ_UOabcVyKqOtXmh_KCHQdM
-python3 timerbot.py 
 
+>> 85 : 1346081175:AAHryYn6BrTHQ_UOabcVyKqOtXmh_KCHQdM
+
+python3 timerbot.py 
 vim timerbot.py
 
 >> 35 : Hi Do yeon!!!!!!!!

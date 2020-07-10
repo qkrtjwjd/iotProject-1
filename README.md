@@ -194,7 +194,7 @@ sudo systenctk disable hcuiart
 
 
 
-#!/usr/bin/python
+# !/usr/bin/python
 import sys, serial, time
 
 comm = 'dev/ttyAMA0'
@@ -209,6 +209,11 @@ while True :
   device.reset_input_bufer()
   rcvBuf = device.read_until(size=12)
   print rcvBuf
+  temp = rcvBuf.find('p')
+  a = revBuf[2:temp]
+  b = int(a)
+  print b
   except Exception as e:
    print("Exception read") + str(e)
    time.sleep(5)
+

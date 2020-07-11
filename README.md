@@ -4,9 +4,27 @@ git clone https://github.com/adafruit/Adafruit_Python_DHT.git
 cd Adafruit_Python_DHT
 sudo python setup.py install
 
-cd Adafruit_Python_DHT/examples
+cd examples/
 
 python AdafruitDHT.py 11 4
+
+import time
+import Adafruit_DHT
+sensor = Adafruit_DHT.DHT11
+pin = 4
+try:
+    while True :
+        h, t = Adafruit_DHT.read_retry(sensor, pin)
+        if h is not None and t is not None :
+            print("Temperature = {0:0.1f}*C Humidity = {1:0.1f}%".format(t, h))
+        else :
+            print('Read error')
+        time.sleep(1)
+except KeyboardInterrupt:
+    print("Terminated by Keyboard")
+ 
+finally:
+    print("End of Program")
 
 # JAVA Install
  
@@ -139,7 +157,7 @@ def intterrupt_fired(channel):
  cd sttudy
  ls
  
- vim.pir.py
+ vim pir.py
  python pir.py
  
  pip install
@@ -190,7 +208,7 @@ pwd
 /home/pi
 
 # bluetooth disable
-sudo systenctk disable hcuiart
+sudo systemctl disable hciuart
 
 
 

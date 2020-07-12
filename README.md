@@ -64,7 +64,7 @@ create database <데이터베이스 이름>
 
 
 # Grafana Installation
-```
+
 ## 1. Repository의 GPG key를 더하기
 
 
@@ -87,14 +87,15 @@ sudo apt install grafana
 ## 4. 프로그램 실행
 
 sudo service grafana-server start
-```
+
 
 ## influxdb import with python
-
+```
 sudo pip install influxdb
+```
 
 ## gpio pin map
-
+```
 cd /tep
 wget https://project-downloads.drogon.net/wiringpi-latest.deb
 sudo dpkg -i wiringpi-latest.deb
@@ -109,17 +110,16 @@ pwd
 git
 cd /home/pi/
 cd ~
-git clone https://github.com/sonnonet/jjvision
+git clone https://github.com/doyeon0507/iotProject
 ```
 
 ### Git hub Use
-
+```
  - Repository down load
- ```
+
  git clone https://github.com/doyeon0507/iotProject
- ```
  
- ## vim 편집기 사용법
+ # vim 편집기 사용법
  ```
  set nu       // Line numner
  set cindent  // C language indent
@@ -134,9 +134,7 @@ git clone https://github.com/sonnonet/jjvision
  if has("syntax") // sysntax on
   systax on
   endif
-  
 ```
-
 
 #!/user/bin/python
 
@@ -211,9 +209,9 @@ cd ..
 pwd
 /home/pi
 
+
 # bluetooth disable
 sudo systemctl disable hciuart
-
 
 
 # !/usr/bin/python
@@ -251,7 +249,6 @@ sudo service grafana-server start
 # telegram install
 ```
 pip3 install python-telegram-bot --upgrade
-```
 
 git clone https://github.com/python-telegram-bot/python-telegram-bot --recursive
 
@@ -275,7 +272,7 @@ import time
 channel = 4
 
 GPIO
-
+```
 
 # --------------------------------------------------------------------------------------------------------------------
 pi@raspberrypi:~ $ influxdb

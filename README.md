@@ -1,5 +1,5 @@
 # Install DHT11 sensor
-
+```
 git clone https://github.com/adafruit/Adafruit_Python_DHT.git
 cd Adafruit_Python_DHT
 sudo apt update
@@ -9,10 +9,10 @@ sudo python setup.py install
 cd Adafruit_Python_DHT
 cd examples
 python AdafruitDHT.py 11 4
+```
 
 # vim dht11.py
-
-``
+```
 import time
 import Adafruit_DHT
 sensor = Adafruit_DHT.DHT11
@@ -30,11 +30,11 @@ except KeyboardInterrupt:
  
 finally:
     print("End of Program")
-``
-# JAVA Install
- 
+```
 
-#1.
+# influxdb
+```
+# 1.
 
 curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 
@@ -45,26 +45,25 @@ echo "deb https://repos.influxdata.com/debian stretch stable" | sudo tee /etc/ap
 #3.
 
 sudo apt update
-sudo apt install influxdb:w
+sudo apt install influxdb
 
 #4.
 
 sudo service influxdb start
-
+```
 
 
 # 데이터베이스 만들기
-
+```
 create database <데이터베이스 이름>
 
 
 
 확인 : show databases
-
+```
 
 
 # Grafana Installation
-
 
 ## 1. Repository의 GPG key를 더하기
 

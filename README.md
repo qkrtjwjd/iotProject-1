@@ -64,7 +64,7 @@ create database <데이터베이스 이름>
 
 
 # Grafana Installation
-
+```
 ## 1. Repository의 GPG key를 더하기
 
 
@@ -86,8 +86,8 @@ sudo apt install grafana
 
 ## 4. 프로그램 실행
 
-
 sudo service grafana-server start
+```
 
 ## influxdb import with python
 

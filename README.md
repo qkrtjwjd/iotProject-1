@@ -2,12 +2,17 @@
 
 git clone https://github.com/adafruit/Adafruit_Python_DHT.git
 cd Adafruit_Python_DHT
+sudo apt update
+sudo apt install build-essential python-dev python-openssl
 sudo python setup.py install
 
-cd examples/
-
+cd Adafruit_Python_DHT
+cd examples
 python AdafruitDHT.py 11 4
 
+# vim dht11.py
+
+``
 import time
 import Adafruit_DHT
 sensor = Adafruit_DHT.DHT11
@@ -25,7 +30,7 @@ except KeyboardInterrupt:
  
 finally:
     print("End of Program")
-
+``
 # JAVA Install
  
 

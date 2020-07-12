@@ -111,15 +111,16 @@ git
 cd /home/pi/
 cd ~
 git clone https://github.com/doyeon0507/iotProject
-```
 
-### Git hub Use
-```
+
+## Git hub Use
+
  - Repository down load
 
  git clone https://github.com/doyeon0507/iotProject
  
- # vim 편집기 사용법
+
+# vim 편집기 사용법
  ```
  set nu       // Line numner
  set cindent  // C language indent

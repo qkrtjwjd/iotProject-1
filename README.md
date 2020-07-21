@@ -13,23 +13,23 @@ python AdafruitDHT.py 11 4
 
 # vim dht11.py
 ```
-import time
-import Adafruit_DHT
-sensor=Adafruit_DHT.DHT11
-pin=4
-try:
-    while True :
-        h, t = Adafruit_DHT.read_retry(sensor,pin)
-        if h is not None and t is not None :
-            print("Temperature = {0:0.1f}*C Humidity = {1:0.1f}%".format(t,h))
-        else :
-          print('Read error')
-         time.sleep(1)
-except KeyboardInterrupt:
-    print("Terminated by Keyboard")
- 
-finally:
-    print("End of Program")
+  1 import time
+  2 import Adafruit_DHT
+  3 sensor=Adafruit_DHT.DHT11
+  4 pin=4
+  5 try:
+  6     while True :
+  7         h, t = Adafruit_DHT.read_retry(sensor,pin)
+  8         if h is not None and t is not None :
+  9           print("Temperature = {0:0.1f}*C Humidity = {1:0.1f}%".format(t,h))
+ 10         else :
+ 11           print('Read error')
+ 12         time.sleep(1)
+ 13 except KeyboardInterrupt:
+ 14     print("Terminated by Keyboard")
+ 15     
+ 16 finally:
+ 17     print("End of Program")                                
 ```
 
 # influxdb
